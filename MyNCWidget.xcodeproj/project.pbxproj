@@ -1,0 +1,362 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DFFBDB3C15F9BF62006213F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFFBDB3B15F9BF62006213F3 /* Foundation.framework */; };
+		DFFBDB3E15F9BF62006213F3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFFBDB3D15F9BF62006213F3 /* UIKit.framework */; };
+		DFFBDB4915F9BF62006213F3 /* MyNCWidgetController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFBDB4815F9BF62006213F3 /* MyNCWidgetController.m */; };
+		DFFBDB5C15F9C052006213F3 /* UIMyToast.h in Headers */ = {isa = PBXBuildFile; fileRef = DFFBDB5A15F9C052006213F3 /* UIMyToast.h */; };
+		DFFBDB5D15F9C052006213F3 /* UIMyToast.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFBDB5B15F9C052006213F3 /* UIMyToast.m */; };
+		DFFBDB5F15F9C17C006213F3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFFBDB5E15F9C17C006213F3 /* CoreGraphics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DFFBDB3815F9BF62006213F3 /* MyNCWidget */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = MyNCWidget; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFFBDB3B15F9BF62006213F3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DFFBDB3D15F9BF62006213F3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DFFBDB4215F9BF62006213F3 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		DFFBDB4315F9BF62006213F3 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		DFFBDB4515F9BF62006213F3 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		DFFBDB4615F9BF62006213F3 /* MyNCWidget-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyNCWidget-Prefix.pch"; sourceTree = "<group>"; };
+		DFFBDB4715F9BF62006213F3 /* MyNCWidgetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyNCWidgetController.h; sourceTree = "<group>"; };
+		DFFBDB4815F9BF62006213F3 /* MyNCWidgetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyNCWidgetController.m; sourceTree = "<group>"; };
+		DFFBDB4E15F9BF62006213F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Package/System/Library/WeeAppPlugins/MyNCWidget.bundle/Info.plist; sourceTree = "<group>"; };
+		DFFBDB4F15F9BF62006213F3 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = Package/System/Library/WeeAppPlugins/MyNCWidget.bundle/InfoPlist.strings; sourceTree = "<group>"; };
+		DFFBDB5015F9BF62006213F3 /* WeeAppBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "WeeAppBackground@2x.png"; path = "Package/System/Library/WeeAppPlugins/MyNCWidget.bundle/WeeAppBackground@2x.png"; sourceTree = "<group>"; };
+		DFFBDB5115F9BF62006213F3 /* WeeAppBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WeeAppBackground.png; path = Package/System/Library/WeeAppPlugins/MyNCWidget.bundle/WeeAppBackground.png; sourceTree = "<group>"; };
+		DFFBDB5A15F9C052006213F3 /* UIMyToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIMyToast.h; sourceTree = "<group>"; };
+		DFFBDB5B15F9C052006213F3 /* UIMyToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIMyToast.m; sourceTree = "<group>"; };
+		DFFBDB5E15F9C17C006213F3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFFBDB3415F9BF62006213F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFFBDB5F15F9C17C006213F3 /* CoreGraphics.framework in Frameworks */,
+				DFFBDB3C15F9BF62006213F3 /* Foundation.framework in Frameworks */,
+				DFFBDB3E15F9BF62006213F3 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DFFBDB2C15F9BF62006213F3 = {
+			isa = PBXGroup;
+			children = (
+				DFFBDB3F15F9BF62006213F3 /* MyNCWidget */,
+				DFFBDB3A15F9BF62006213F3 /* Frameworks */,
+				DFFBDB3915F9BF62006213F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DFFBDB3915F9BF62006213F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFFBDB3815F9BF62006213F3 /* MyNCWidget */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFFBDB3A15F9BF62006213F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFFBDB5E15F9C17C006213F3 /* CoreGraphics.framework */,
+				DFFBDB3B15F9BF62006213F3 /* Foundation.framework */,
+				DFFBDB3D15F9BF62006213F3 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFFBDB3F15F9BF62006213F3 /* MyNCWidget */ = {
+			isa = PBXGroup;
+			children = (
+				DFFBDB5A15F9C052006213F3 /* UIMyToast.h */,
+				DFFBDB5B15F9C052006213F3 /* UIMyToast.m */,
+				DFFBDB4715F9BF62006213F3 /* MyNCWidgetController.h */,
+				DFFBDB4815F9BF62006213F3 /* MyNCWidgetController.m */,
+				DFFBDB4015F9BF62006213F3 /* Package */,
+				DFFBDB4415F9BF62006213F3 /* Supporting Files */,
+			);
+			path = MyNCWidget;
+			sourceTree = "<group>";
+		};
+		DFFBDB4015F9BF62006213F3 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				DFFBDB4115F9BF62006213F3 /* DEBIAN */,
+				DFFBDB4A15F9BF62006213F3 /* System */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		DFFBDB4115F9BF62006213F3 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				DFFBDB4215F9BF62006213F3 /* control.txt */,
+				DFFBDB4315F9BF62006213F3 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		DFFBDB4415F9BF62006213F3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DFFBDB4515F9BF62006213F3 /* PackageVersion.plist */,
+				DFFBDB4615F9BF62006213F3 /* MyNCWidget-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DFFBDB4A15F9BF62006213F3 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				DFFBDB4B15F9BF62006213F3 /* Library */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		DFFBDB4B15F9BF62006213F3 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				DFFBDB4C15F9BF62006213F3 /* WeeAppPlugins */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		DFFBDB4C15F9BF62006213F3 /* WeeAppPlugins */ = {
+			isa = PBXGroup;
+			children = (
+				DFFBDB4D15F9BF62006213F3 /* ___PACKAGENAME___ */,
+			);
+			name = WeeAppPlugins;
+			sourceTree = "<group>";
+		};
+		DFFBDB4D15F9BF62006213F3 /* ___PACKAGENAME___ */ = {
+			isa = PBXGroup;
+			children = (
+				DFFBDB4E15F9BF62006213F3 /* Info.plist */,
+				DFFBDB4F15F9BF62006213F3 /* InfoPlist.strings */,
+				DFFBDB5115F9BF62006213F3 /* WeeAppBackground.png */,
+				DFFBDB5015F9BF62006213F3 /* WeeAppBackground@2x.png */,
+			);
+			name = "___PACKAGENAME___";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DFFBDB3515F9BF62006213F3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFFBDB5C15F9C052006213F3 /* UIMyToast.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DFFBDB3715F9BF62006213F3 /* MyNCWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFFBDB5415F9BF62006213F3 /* Build configuration list for PBXNativeTarget "MyNCWidget" */;
+			buildPhases = (
+				DFFBDB3315F9BF62006213F3 /* Sources */,
+				DFFBDB3415F9BF62006213F3 /* Frameworks */,
+				DFFBDB3515F9BF62006213F3 /* Headers */,
+				DFFBDB3615F9BF62006213F3 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyNCWidget;
+			productName = MyNCWidget;
+			productReference = DFFBDB3815F9BF62006213F3 /* MyNCWidget */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFFBDB2E15F9BF62006213F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+			};
+			buildConfigurationList = DFFBDB3115F9BF62006213F3 /* Build configuration list for PBXProject "MyNCWidget" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DFFBDB2C15F9BF62006213F3;
+			productRefGroup = DFFBDB3915F9BF62006213F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFFBDB3715F9BF62006213F3 /* MyNCWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DFFBDB3615F9BF62006213F3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFFBDB3315F9BF62006213F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFFBDB4915F9BF62006213F3 /* MyNCWidgetController.m in Sources */,
+				DFFBDB5D15F9C052006213F3 /* UIMyToast.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DFFBDB5215F9BF62006213F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		DFFBDB5315F9BF62006213F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		DFFBDB5515F9BF62006213F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_EXTENSION = "";
+				EXECUTABLE_NAME = MyNCWidget;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyNCWidget/MyNCWidget-Prefix.pch";
+				INSTALL_PATH = /System/Library/WeeAppPlugins/MyNCWidget.bundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 192.168.0.118;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+		DFFBDB5615F9BF62006213F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_EXTENSION = "";
+				EXECUTABLE_NAME = MyNCWidget;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyNCWidget/MyNCWidget-Prefix.pch";
+				INSTALL_PATH = /System/Library/WeeAppPlugins/MyNCWidget.bundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 192.168.0.118;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFFBDB3115F9BF62006213F3 /* Build configuration list for PBXProject "MyNCWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFFBDB5215F9BF62006213F3 /* Release */,
+				DFFBDB5315F9BF62006213F3 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFFBDB5415F9BF62006213F3 /* Build configuration list for PBXNativeTarget "MyNCWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFFBDB5515F9BF62006213F3 /* Release */,
+				DFFBDB5615F9BF62006213F3 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DFFBDB2E15F9BF62006213F3 /* Project object */;
+}
