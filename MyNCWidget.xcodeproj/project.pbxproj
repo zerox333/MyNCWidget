@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ABBC272D15FB21F900DF8880 /* NSProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = ABBC272B15FB21F900DF8880 /* NSProperty.h */; };
+		ABBC272E15FB21F900DF8880 /* NSProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = ABBC272C15FB21F900DF8880 /* NSProperty.m */; };
 		DFFBDB3C15F9BF62006213F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFFBDB3B15F9BF62006213F3 /* Foundation.framework */; };
 		DFFBDB3E15F9BF62006213F3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFFBDB3D15F9BF62006213F3 /* UIKit.framework */; };
 		DFFBDB4915F9BF62006213F3 /* MyNCWidgetController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFBDB4815F9BF62006213F3 /* MyNCWidgetController.m */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ABBC272B15FB21F900DF8880 /* NSProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSProperty.h; sourceTree = "<group>"; };
+		ABBC272C15FB21F900DF8880 /* NSProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSProperty.m; sourceTree = "<group>"; };
 		DFFBDB3815F9BF62006213F3 /* MyNCWidget */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = MyNCWidget; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFFBDB3B15F9BF62006213F3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DFFBDB3D15F9BF62006213F3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -78,6 +82,8 @@
 		DFFBDB3F15F9BF62006213F3 /* MyNCWidget */ = {
 			isa = PBXGroup;
 			children = (
+				ABBC272B15FB21F900DF8880 /* NSProperty.h */,
+				ABBC272C15FB21F900DF8880 /* NSProperty.m */,
 				DFFBDB5A15F9C052006213F3 /* UIMyToast.h */,
 				DFFBDB5B15F9C052006213F3 /* UIMyToast.m */,
 				DFFBDB4715F9BF62006213F3 /* MyNCWidgetController.h */,
@@ -158,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFFBDB5C15F9C052006213F3 /* UIMyToast.h in Headers */,
+				ABBC272D15FB21F900DF8880 /* NSProperty.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +237,7 @@
 			files = (
 				DFFBDB4915F9BF62006213F3 /* MyNCWidgetController.m in Sources */,
 				DFFBDB5D15F9C052006213F3 /* UIMyToast.m in Sources */,
+				ABBC272E15FB21F900DF8880 /* NSProperty.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +314,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
-				iOSOpenDevDevice = 192.168.0.118;
+				iOSOpenDevDevice = "";
 				iOSOpenDevInstallOnAnyBuild = NO;
 				iOSOpenDevInstallOnProfiling = YES;
 				iOSOpenDevRespringOnInstall = YES;
@@ -327,7 +335,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
-				iOSOpenDevDevice = 192.168.0.118;
+				iOSOpenDevDevice = "";
 				iOSOpenDevInstallOnAnyBuild = NO;
 				iOSOpenDevInstallOnProfiling = YES;
 				iOSOpenDevRespringOnInstall = YES;

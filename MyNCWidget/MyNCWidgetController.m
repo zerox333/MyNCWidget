@@ -9,6 +9,7 @@
 #import <CoreGraphics/CoreGraphics.h>
 #import "MyNCWidgetController.h"
 #import "UIMyToast.h"
+#import "NSProperty.h"
 
 @implementation MyNCWidgetController
 
@@ -16,6 +17,10 @@
 {
 	if ((self = [super init]))
 	{
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(updateText:)
+                                                     name:TOAST_SHOW_TEXT
+                                                   object:nil];
 	}
 
 	return self;
@@ -23,6 +28,10 @@
 
 -(void)dealloc
 {
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:TOAST_SHOW_TEXT
+                                                  object:nil];
+    
 	[_view release];
 	[super dealloc];
 }
@@ -40,13 +49,13 @@
 		[_view addSubview:bgView];
 		[bgView release];
 
-		UILabel *lbl = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 316, 71)];
-		lbl.backgroundColor = [UIColor clearColor];
-		lbl.textColor = [UIColor whiteColor];
-		lbl.text = @"Hello, Notification Center!";
-		lbl.textAlignment = UITextAlignmentCenter;
-		[_view addSubview:lbl];
-		[lbl release];
+		_label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 316, 71)];
+		_label.backgroundColor = [UIColor clearColor];
+		_label.textColor = [UIColor whiteColor];
+		_label.text = @"Hello, Notification Center!";
+		_label.textAlignment = UITextAlignmentCenter;
+		[_view addSubview:_label];
+		[_label release];
         
         UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(touchAction:)];
         [_view addGestureRecognizer:tapGesture];
@@ -63,9 +72,25 @@
 
 - (void)touchAction:(UITapGestureRecognizer *)tapGesture
 {
-    UIMyToast *toast = [[UIMyToast alloc] init];
-    [toast show:@"WoW~\nNotification Center" Gravity:TOAST_GRAVITY_CENTURE Length:TOAST_LENGTH_SHORT];
-    [toast release];
+    if ([NSProperty isToastEnabled])
+    {
+        NSString *message = [NSProperty toastMessage];
+        
+        UIMyToast *toast = [[UIMyToast alloc] init];
+        [toast show:message Gravity:TOAST_GRAVITY_CENTURE Length:TOAST_LENGTH_SHORT];
+        [toast release];
+        
+        [[NSNotificationCenter defaultCenter] postNotificationName:TOAST_SHOW_TEXT object:message];
+    }
+}
+
+- (void)updateText:(NSNotification *)notification
+{
+    NSString *text = [notification object];
+    if (text)
+    {
+        _label.text = text;
+    }
 }
 
 @end
